@@ -1,13 +1,11 @@
-function identifyPrime(num) {
-    let count = 0;
- for(let i=0;i<num;i++){
-   if(num%i = 1){
-          count++;
-         
-        }
-   }if(count==2){
-   console.log('Yes');
-   }else
-     console.log('No');
-    
+function ifPrime(num){
+  let flag = true
+  for(let i =2;i<=Math.sqrt(num);i++){
+    if(num%i==0){
+      flag = false
+    }
+  }
+  console.log(flag)
 }
+
+ifPrime(66751)
